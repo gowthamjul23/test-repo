@@ -24,7 +24,7 @@ pipeline    {
     }
     stage('Deploy Tetjob2'){
       steps{
-          build(job: "Testjob2")
+          build(job: "Testjob")
       }           
     }
   }
