@@ -17,14 +17,14 @@ pipeline    {
         }
       }
     }
-    stage('Deploy Tetjob1'){
+    stage('Post Deploy Tetjob1'){
       steps{
           build(job: "Testjob1")
       }           
     }
-    stage('Deploy Tetjob2'){
+    stage('Post Deploy Tetjob2'){
       steps{
-          build(job: "Testjob")
+          build(job: "Testjob2")
       }           
     }
   }
